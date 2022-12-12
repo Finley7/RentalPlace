@@ -38,7 +38,7 @@ namespace BLL
 
                 userRepository.Create(u);
 
-                return userRepository.Last<User>();
+                return u;
             }
 
             return user;

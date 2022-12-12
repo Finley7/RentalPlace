@@ -33,10 +33,5 @@ namespace DAL.Repository
         {
             return Db.Set<T>().Where($"{key} {op} \"{value}\"");
         }
-
-        public T Last<T>() where T : class
-        {
-            return Db.Set<T>().Last();
-        }
     }
 }
